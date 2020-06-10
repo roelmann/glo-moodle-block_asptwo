@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/asptwo/db" VERSION="20140120" COMMENT="XMLDB file for Moodle blocks/recent_activity"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_asptwo" COMMENT="ASP2 Block">
+      <FIELDS>
+
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="User performing the action"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Course id"/>
+        <FIELD NAME="module" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Module type"/>
+        <FIELD NAME="contextid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Context ID"/>
+        <FIELD NAME="instanceid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Module instance"/>
+        <FIELD NAME="action" TYPE="char" LENGTH="1" NOTNULL="true" SEQUENCE="false" COMMENT="0 created, 1 updated, 2 deleted"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="modidnumber" TYPE="char" LENGTH="30" NOTNULL="false" SEQUENCE="false" COMMENT="Module idnumber"/>
+        <FIELD NAME="duedate" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Due date where assignment/quiz/relevant"/>
+        <FIELD NAME="concatsettings" TYPE="char" LENGTH="500" NOTNULL="false" SEQUENCE="false" COMMENT="Concatenated settings"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userinstancetime" UNIQUE="false" FIELDS="userid, instanceid, timemodified"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

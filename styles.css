@@ -1,0 +1,26 @@
+﻿body.bugfixclass {color:#000;}
+.ASPCodeAdded #id_submissiontypes,
+.ASPCodeAdded #id_feedbacktypes,
+.ASPCodeAdded #id_submissionsettings,
+.ASPCodeAdded #id_groupsubmissionsettings,
+.ASPCodeAdded #id_notifications,
+.ASPCodeAdded #id_plugin_header,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_advancedgradingmethod_submissions,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_gradecat,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_gradepass,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_blindmarking,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_hidegrader,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_markingworkflow,
+.ASPCodeAdded #id_modstandardgrade #fitem_id_markingallocation,
+.ASPCodeAdded #id_modstandardelshdr,
+.ASPCodeAdded #id_availability {display:none;}
+
+.aspbtn {
+    font-size: 70% !important;
+    font-weight: 400 !important;
+    float: right !important;
+}
+
+.haslinkcode {display:none;}
+.ASPCodeAdded .haslinkcode {display:block;}
+.ASPCodeAdded .aspcodebuttons {display:none;}
